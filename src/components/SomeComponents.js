@@ -8,8 +8,8 @@ const SomeComponent = () => {
   RosComponent(setMessage);
 
   return (
-    <div>
-      <h2>ROS Mesajı: {message}</h2>
+    <div style={ {backgroundColor: 'white'}}>
+      <h2 >ROS Mesajı: {message}</h2>
     </div>
   );
 };

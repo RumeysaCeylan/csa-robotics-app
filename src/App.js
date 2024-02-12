@@ -1,6 +1,6 @@
 import './App.css';
 import Dashboard from './containers/Dasboard';
-import React from 'react';
+import React, { useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import EmergencyStop from './components/EmergencyStop';
 import ToolBar from './components/ToolBar';
@@ -15,7 +15,9 @@ import SomeComponent from './components/SomeComponents';
 
 
 function App() {
-
+  useEffect(() => {
+    document.title = "CSA ROBOTICS"; 
+  }, []); 
   return (
     <div className="App" >
      <Router>
@@ -23,7 +25,7 @@ function App() {
       <Dashboard />
       <ToolBar />
       
-        <main style={{ marginLeft: '150px', padding: '10px' }}>
+        <main style={{ marginLeft: '150px', padding: '100px' }}>
         
           <Routes>
             <Route path="/" element={<Control />} />
@@ -32,7 +34,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
-        <div>
+        <div >
           <SomeComponent/>
 
         </div>

@@ -44,9 +44,9 @@
   align-items: center; /* Dikey olarak merkezle */
   flex-direction: column;
   justify-content: center; /* Yatay olarak merkezle */
-  padding: 30px 100px; /* İç boşluk */
+  padding: 30px 10px; /* İç boşluk */
   margin: 20px; /* Dış boşluk */
-  border: 2px solid white; /* Sarı kenarlık */
+  border: 5px solid white; /* Sarı kenarlık */
   width: 350px;
   cursor: pointer;
   height: 5px;
