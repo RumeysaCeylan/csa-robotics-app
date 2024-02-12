@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ROSLIB from 'roslib';
 
-const RosComponent = () => {
+export const RosComponent = (setMessage) => {
   useEffect(() => {
     // ROS Bridge bağlantısı kur
     const ros = new ROSLIB.Ros({
@@ -28,7 +28,7 @@ const RosComponent = () => {
     });
 
     listener.subscribe((message) => {
-      console.log('Alınan mesaj:', message);
+      setMessage(message.data);
       // Burada mesajı işleyebilirsiniz
     });
 
@@ -36,9 +36,7 @@ const RosComponent = () => {
     return () => {
       listener.unsubscribe();
     };
-  }, []);
+  }, [setMessage]);
 
-  return <div>ROS Bağlantı Durumu</div>;
 };
 
-export default RosComponent;

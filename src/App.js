@@ -8,7 +8,8 @@ import Control from './containers/Control';
 import Settings from './containers/Settings';
 import Logs from './containers/Logs';
 import Mapping from './containers/Mapping';
-import LogoBar from './components/LogoBar';
+//import LogoBar from './components/LogoBar';
+import SomeComponent from './components/SomeComponents';
 
 
 
@@ -21,6 +22,7 @@ function App() {
       
       <Dashboard />
       <ToolBar />
+      
         <main style={{ marginLeft: '150px', padding: '10px' }}>
         
           <Routes>
@@ -30,6 +32,10 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
+        <div>
+          <SomeComponent/>
+
+        </div>
         <EmergencyStop />
       </Router>
     </div>

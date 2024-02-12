@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ControlPanel.css';
+import '../ControlPanel.css';
 
 const Control = () => {
   // Başlangıç hızını tutacak state
