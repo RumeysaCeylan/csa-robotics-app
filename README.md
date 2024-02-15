@@ -1,3 +1,10 @@
+kurulumlar
+npm install --save @fortawesome/fontawesome-svg-core @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+npm install react-router-dom
+npm install @babel/plugin-proposal-private-property-in-object --save-dev
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
