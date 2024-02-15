@@ -30,73 +30,73 @@
 }
 
 .nav-links {
-  width: 200px; /* Navigasyon menüsünün genişliği */
-  margin-top: 20px; /* Üstten boşluk */
+  width: 200px; 
+  margin-top: 20px; 
 }
 
 .nav-links ul {
-  list-style-type: none; /* Liste işaretlerini kaldır */
-  padding: 0; /* Varsayılan padding'i kaldır */
-  margin: 0; /* Varsayılan margin'i kaldır */
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
 }
 
 .nav-links li {
-  margin-bottom: 10px; /* Liste elemanları arası boşluk */
+  margin-bottom: 10px;
 }
 
 .button {
   display: inline-block;
-  background-color: orange; /* Butonun arka plan rengi */
-  color: black; /* Metin rengi */
-  align-items: center; /* Dikey olarak merkezle */
-  justify-content: center; /* Yatay olarak merkezle */
-  padding: 10px 20px; /* İç boşluk */
-  margin: 10px; /* Dış boşluk */
-  border: 2px solid orange; /* Sarı kenarlık */
+  background-color: orange;
+  color: black; 
+  align-items: center;
+  justify-content: center; 
+  padding: 10px 20px; 
+  margin: 10px; 
+  border: 2px solid orange;
   width: 110px;
   height: 20px;
-  border-radius: 20px; /* Yuvarlak köşeler */
-  text-decoration: none; /* Altı çizili metni kaldır */
-  font-size: 16px; /* Metin boyutu */
-  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
-  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  border-radius: 20px;
+  text-decoration: none; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s; 
 }
 
 .button:hover {
-  background-color: rgb(255, 81, 0); /* Butonun üzerine gelindiğinde arka plan rengi */
-  color: white; /* Butonun üzerine gelindiğinde metin rengi */
+  background-color: rgb(255, 81, 0); 
+  color: white; 
   border: 2px solid rgb(255, 81, 0);
 }
 
 .emergency-stop {
-  position: fixed; /* Sayfanın en alt sol köşesinde sabit kalacak */
-  left: 50px; /* Soldan boşluk */
-  bottom: 20px; /* Alttan boşluk */
-  background-color: red; /* Arka plan rengi */
-  color: white; /* Yazı rengi */
-  border: none; /* Kenarlık kaldırıldı */
-  padding: 10px 20px; /* İç boşluk */
-  border-radius: 5px; /* Hafif yuvarlak köşeler */
-  cursor: pointer; /* İmleç, üzerine gelindiğinde el şeklini alır */
-  font-weight: bold; /* Yazı tipi kalınlaştırıldı */
+  position: fixed; 
+  left: 50px; 
+  bottom: 20px; 
+  background-color: red;
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  font-weight: bold;
   width: 190px;
 }
 
 .active-link {
   display: inline-block;
-  background-color: rgb(255, 81, 0); /* Butonun arka plan rengi */
-  color: black; /* Metin rengi */
-  align-items: center; /* Dikey olarak merkezle */
-  justify-content: center; /* Yatay olarak merkezle */
-  padding: 10px 20px; /* İç boşluk */
-  margin: 10px; /* Dış boşluk */
-  border: 2px solid rgb(255, 81, 0); /* Sarı kenarlık */
+  background-color: rgb(255, 81, 0); 
+  color: black; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px 20px; 
+  margin: 10px; 
+  border: 2px solid rgb(255, 81, 0); 
   width: 110px;
   height: 20px;
-  border-radius: 20px; /* Yuvarlak köşeler */
-  text-decoration: none; /* Altı çizili metni kaldır */
-  font-size: 16px; /* Metin boyutu */
-  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  border-radius: 20px; 
+  text-decoration: none; 
+  font-size: 16px; 
+  cursor: pointer; 
 }
 .page {
     background-color: rgb(23, 24, 42);
@@ -120,23 +120,23 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white; /* Beyaz arka plan */
-  z-index: 1000; /* Diğer içeriklerin üzerinde görünmesini sağlar */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Altında hafif bir gölge */
+  background-color: white; 
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #f0f0f0; /* Örnek bir arka plan rengi */
+  background-color: #f0f0f0; 
 }
 
 .logo {
-  height: 50px; /* Logo yüksekliği */
-  width: auto; /* Logo genişliğini orijinal oranına göre ayarla */
-  margin-right: 20px; /* Logodan sonraki içerik arasında boşluk */
+  height: 50px;
+  width: auto; 
+  margin-right: 20px; 
 }
 .logo-container img {
-  height: 50px; /* Logo yüksekliği */
-  margin: 10px; /* Üst ve yan boşluk */
+  height: 50px; 
+  margin: 10px;
 }
 
 

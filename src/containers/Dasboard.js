@@ -2,7 +2,7 @@ import React from 'react';
 import LineBox from '../components/LineBox';
 
 const Dashboard = () => {
-  // Örnek veriler, gerçek uygulamada bu veriler cihazdan alınacak
+  // gerçek uygulamada bu veriler cihazdan alınacak
   const data = {
     temperature: 24, // Sıcaklık
     humidity: 50,    // Nem

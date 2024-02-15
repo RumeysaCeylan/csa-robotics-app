@@ -26,8 +26,8 @@ const LineBox = ({ icon, value, unit, title }) => {
       margin: '10px',
       borderRadius: '5px',
       display: 'flex',
-      alignItems: 'center', // İkon ve metni dikey olarak hizala
-      justifyContent: 'space-evenly', // İkon ve metni eşit aralıklarla hizala
+      alignItems: 'center',
+      justifyContent: 'space-evenly', 
       width: '200px',
       height: '30px',
     }}>

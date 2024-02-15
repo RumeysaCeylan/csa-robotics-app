@@ -12,7 +12,7 @@ const Control = () => {
   const [drivingMode, setDrivingMode] = useState(null);
 
 
-  // Manuel ve Otonom sürüş modlarını ayarlayan fonksiyonlar
+
   const handleManualDriving = () => {
     setDrivingMode('manual');
   };
@@ -24,20 +24,21 @@ const Control = () => {
   // Başlangıç hızını tutacak state
   const [speed, setSpeed] = useState(0);
   const [isAutonomousDriving, setIsAutonomousDriving] = useState(false);
-  // Otonom sürüşü başlat ve durdur için fonksiyonlar
+
+
   const startAutonomousDriving = () => {
     console.log("Otonom sürüş başlatıldı, hız:", speed);
     setIsAutonomousDriving(true);
-    // Burada ROS'a başlangıç hızı ile birlikte otonom sürüşü başlatma komutu gönderilebilir
+    // ROS Otonom sürüşü başlat komutu
   };
 
   const stopAutonomousDriving = () => {
     console.log("Otonom sürüş durduruldu");
     setIsAutonomousDriving(false);
-    // Burada ROS'a otonom sürüşü durdurma komutu gönderilebilir
+    // Ros otonom sürüşü bitir komutu
   };
 
-  // Başlangıç hızını güncelleyecek olay işleyicisi
+  // başlangıç hızı
   const handleSpeedChange = (event) => {
     if (event.target.value>=0 && event.target.value<=5)
     {
@@ -81,7 +82,7 @@ const Control = () => {
         <button className='button-control' onClick={startAutonomousDriving} disabled={isAutonomousDriving} 
             style={{ backgroundColor: isAutonomousDriving ? 'red' : 'orange' }}>Start Autonomous Driving</button>
         <button className='button-control' onClick={stopAutonomousDriving} disabled={!isAutonomousDriving}>Stop Autonomous Driving</button>
-        <p> {message}</p>
+        <p style={{color:'white'}}> ros mesajı {message}</p>
 
       </div>
        )}

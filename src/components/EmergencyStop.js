@@ -2,10 +2,10 @@ import React from 'react';
 
 
 const EmergencyStop = () => {
-    // Acil durumda çalıştırılacak fonksiyon
+   
     const handleEmergencyStop = () => {
     console.log('Acil Stop Aktif!');
-    // Burada ROS ile iletişim kurma işlevselliğinizi ekleyebilirsiniz
+    // ros ile iletişim burada kurulacak
     };
       
   return (
