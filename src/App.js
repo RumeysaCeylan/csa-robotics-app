@@ -9,7 +9,7 @@ import Settings from './containers/Settings';
 import Logs from './containers/Logs';
 import Mapping from './containers/Mapping';
 //import LogoBar from './components/LogoBar';
-import SomeComponent from './components/SomeComponents';
+//import SomeComponent from './components/SomeComponents';
 
 
 
@@ -34,10 +34,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
-        <div >
-          <SomeComponent/>
-
-        </div>
+       
         <EmergencyStop />
       </Router>
     </div>
@@ -45,3 +42,9 @@ function App() {
 }
 
 export default App;
+/*
+ <div >
+          <SomeComponent/>
+
+        </div>
+*/

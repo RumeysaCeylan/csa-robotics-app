@@ -1,7 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect} from 'react';
 import ROSLIB from 'roslib';
 
-export const RosComponent = (setMessage) => {
+export const RosComponent = (setMessage, setConnectionStatus) => {
+  
+  //const [rosConnected, setRosConnected] = useState(false);
+  
   useEffect(() => {
     // ROS Bridge bağlantısı kur
     const ros = new ROSLIB.Ros({
@@ -9,15 +12,22 @@ export const RosComponent = (setMessage) => {
     });
 
     ros.on('connection', () => {
-      console.log('Bağlantı kuruldu.');
+      console.log('connected');
+      setConnectionStatus('connected');
+      //setRosConnected(true);
     });
 
     ros.on('error', (error) => {
-      console.log('Bağlantı hatası:', error);
+      console.log('connection error', error);
+      setConnectionStatus('connection error');
+      //setRosConnected(false);
     });
 
     ros.on('close', () => {
-      console.log('Bağlantı kapatıldı.');
+      console.log('Closed');
+      setConnectionStatus('closed');
+      //setRosConnected(false);
+      
     });
 
     // Bir ROS konusuna abone ol
@@ -29,14 +39,16 @@ export const RosComponent = (setMessage) => {
 
     listener.subscribe((message) => {
       setMessage(message.data);
-      // Burada mesajı işleyebilirsiniz
+      //setRosConnected(false);
     });
 
     // Bağlantıyı temizle
     return () => {
       listener.unsubscribe();
     };
-  }, [setMessage]);
+  }, [setMessage, setConnectionStatus]);
+
+  //return {rosConnected};
 
 };
 

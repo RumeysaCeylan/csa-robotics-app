@@ -45,7 +45,7 @@
   flex-direction: column;
   justify-content: center; /* Yatay olarak merkezle */
   padding: 30px 10px; /* İç boşluk */
-  margin: 20px; /* Dış boşluk */
+  margin: 30px; /* Dış boşluk */
   border: 5px solid white; /* Sarı kenarlık */
   width: 350px;
   cursor: pointer;
@@ -55,4 +55,132 @@
   font-size: 14px; /* Metin boyutu */
   cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
   transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+}
+
+.button-choose{
+  display: left;
+  background-color: rgb(235, 117, 48); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: column;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 30px 10px; /* İç boşluk */
+  margin: 30px 20px 50px ; /* Dış boşluk */
+  border: 5px solid white; /* Sarı kenarlık */
+  width: 200px;
+  cursor: pointer;
+  height: 5px;
+  border-radius: 20px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 14px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+}
+
+.control-panel-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Düğmeler arası boşluk */
+}
+
+
+.button-ileri{
+  display: center;
+  background-color: rgb(243, 198, 172); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: row-reverse;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 10px 10px 10px 10px; /* İç boşluk */
+  border: 2px solid white; /* Sarı kenarlık */
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 20px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  margin: 0 5px;
+}
+
+.button-geri{
+  display: center;
+  background-color: rgb(243, 198, 172); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: row-reverse;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 10px 10px 10px 10px; /* İç boşluk */
+  border: 2px solid white; /* Sarı kenarlık */
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 20px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  margin: 0 5px;
+}
+.button-sağ{
+  display: center;
+  background-color: rgb(243, 198, 172); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: row-reverse;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 10px 10px 10px 10px; /* İç boşluk */
+  border: 2px solid white; /* Sarı kenarlık */
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 20px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  margin-right: auto; /* Sağdaki düğmelerden itmek için */
+  margin: 0 5px;
+}
+.button-sol{
+  display: center;
+  background-color: rgb(243, 198, 172); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: row-reverse;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 10px 10px 10px 10px; /* İç boşluk */
+  border: 2px solid white; /* Sarı kenarlık */
+  width: 50px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 20px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  margin-left: auto; /* Soldaki düğmelerden itmek için */
+  margin: 0 5px;
+}
+.button-dur{
+  display: center;
+  background-color: rgb(243, 198, 172); /* Butonun arka plan rengi */
+  color: black; /* Metin rengi */
+  align-items: center; /* Dikey olarak merkezle */
+  flex-direction: row-reverse;
+  justify-content: center; /* Yatay olarak merkezle */
+  padding: 10px 10px 10px 10px; /* İç boşluk */
+  border: 2px solid white; /* Sarı kenarlık */
+  width: 80px;
+  cursor: pointer;
+  height: 50px;
+  border-radius: 8px; /* Yuvarlak köşeler */
+  text-decoration: none; /* Altı çizili metni kaldır */
+  font-size: 20px; /* Metin boyutu */
+  cursor: pointer; /* İmleç buton üzerine geldiğinde el şeklini alır */
+  transition: background-color 0.3s, color 0.3s; /* Geçiş efekti */
+  margin: 0 5px;
+  
 }
